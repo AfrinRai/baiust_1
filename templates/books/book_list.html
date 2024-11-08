@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center; color: #007bff;">Book lists with others info</h1>
+    <div>
+        {% for allBooks in books %}
+            <div style="width: 300px;
+                margin: 30px auto;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 15px;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                color: #333;">
+                <h2>{{allBooks.title}}</h2>
+                <p><strong>Author Name: </strong>{{allBooks.author}}</p>
+                <p><strong>Published Date: </strong>{{allBooks.published_date}}</p>
+            </div>
+        {% endfor %}
+    </div>
+ 
+</body>
+</html>
